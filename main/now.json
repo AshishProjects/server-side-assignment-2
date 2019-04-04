@@ -3,10 +3,10 @@
     "name": "koa-mysql-assignment-todo-list",
     "alias": "koa-mysql-assignment-todo-list.now.sh",
     "env": {
-      "DBHOST": "mydatabase.c429pnqwz5rj.us-east-2.rds.amazonaws.com",
+      "DBHOST": "",
       "DBPORT": "3306",
-      "DBUSER": "Myproject1",
-      "DBPASSWORD": "Myproject1",
+      "DBUSER": "",
+      "DBPASSWORD": "",
       "DBNAME": "todoDataList"
     },
     "builds": [{ "src": "api/*/index.js", "use": "@now/node" }],
