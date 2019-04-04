@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "name": "koa-mysql-assignment-todo-list",
+    "alias": "koa-mysql-assignment-todo-list.now.sh",
+    "env": {
+      "DBHOST": "mydatabase.c429pnqwz5rj.us-east-2.rds.amazonaws.com",
+      "DBPORT": "3306",
+      "DBUSER": "Myproject1",
+      "DBPASSWORD": "Myproject1",
+      "DBNAME": "todoDataList"
+    },
+    "builds": [{ "src": "api/*/index.js", "use": "@now/node" }],
+    "routes": [
+      { "src": "/api/post", "methods": ["POST"], "dest": "/api/post/index.js" },
+      { "src": "/api/get", "methods": ["GET"], "dest": "/api/get/index.js" },
+      { "src": "/", "status": 404},
+      { "src": "/api", "status": 404}
+    ]
+  }
